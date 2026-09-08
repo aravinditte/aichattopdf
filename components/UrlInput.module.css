@@ -1,0 +1,157 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.inputWrapper {
+  width: 100%;
+  margin-bottom: var(--space-4, 1rem);
+}
+
+.input {
+  width: 100%;
+  padding: 16px 20px;
+  font-size: 1.125rem;
+  font-family: inherit;
+  color: var(--color-text, #334155);
+  background-color: var(--color-surface, #ffffff);
+  border: 1px solid var(--color-border, #cbd5e1);
+  border-radius: var(--radius-lg, 12px);
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: border-color var(--transition-fast, 0.2s), box-shadow var(--transition-fast, 0.2s);
+}
+
+.input:focus {
+  outline: none;
+  border-color: var(--color-accent, #0ea5e9);
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05), 0 0 0 3px rgba(14, 165, 233, 0.2);
+}
+
+.input::placeholder {
+  color: var(--color-text-muted, #94a3b8);
+}
+
+.buttonGroup {
+  display: flex;
+  gap: var(--space-4, 1rem);
+  width: 100%;
+}
+
+.pasteButton {
+  flex: 1;
+  padding: 14px 24px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--color-primary, #0f172a);
+  background-color: transparent;
+  border: 1px solid var(--color-primary, #0f172a);
+  border-radius: var(--radius-md, 8px);
+  cursor: pointer;
+  transition: all var(--transition-fast, 0.2s ease);
+}
+
+.pasteButton:hover:not(:disabled) {
+  background-color: rgba(15, 23, 42, 0.05);
+}
+
+.pasteButton:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.generateButton {
+  flex: 2;
+  padding: 14px 24px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #ffffff;
+  background-color: var(--color-primary, #0f172a);
+  border: 1px solid var(--color-primary, #0f172a);
+  border-radius: var(--radius-md, 8px);
+  cursor: pointer;
+  transition: all var(--transition-fast, 0.2s ease);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.generateButton:hover:not(:disabled) {
+  background-color: #1e293b;
+}
+
+.generateButton:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.loadingContent {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.spinner {
+  width: 18px;
+  height: 18px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  border-top-color: #ffffff;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.error {
+  margin-top: var(--space-4, 1rem);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--color-error, #ef4444);
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.errorIcon {
+  width: 16px;
+  height: 16px;
+}
+
+.success {
+  margin-top: var(--space-4, 1rem);
+  color: var(--color-success, #10b981);
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.badges {
+  display: flex;
+  gap: var(--space-3, 0.75rem);
+  margin-top: var(--space-6, 1.5rem);
+}
+
+.badge {
+  padding: 4px 12px;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.chatgpt {
+  background-color: #10a37f;
+  color: #ffffff;
+}
+
+.gemini {
+  background-color: #1a73e8;
+  color: #ffffff;
+}
