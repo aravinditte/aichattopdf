@@ -16,7 +16,7 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata = {
-  metadataBase: new URL('https://aichattopdf.com'),
+  metadataBase: new URL('https://aichattopdf.netlify.com'),
   title: {
     default: 'AIChat to PDF — Convert ChatGPT & Gemini Conversations to PDF (Free)',
     template: '%s | AIChat to PDF',
@@ -49,7 +49,7 @@ export const metadata = {
       'Convert public ChatGPT and Gemini share links into clean, beautifully formatted PDF files. Free, no login, no extension required.',
     siteName: 'AIChat to PDF',
     type: 'website',
-    url: 'https://aichattopdf.com',
+    url: 'https://aichattopdf.netlify.com',
   },
   twitter: {
     card: 'summary_large_image',

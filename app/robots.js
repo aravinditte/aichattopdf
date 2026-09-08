@@ -5,6 +5,6 @@ export default function robots() {
       allow: '/',
       disallow: '/api/',
     },
-    sitemap: 'https://aichattopdf.com/sitemap.xml',
+    sitemap: 'https://aichattopdf.netlify.com/sitemap.xml',
   };
 }
