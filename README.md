@@ -2,7 +2,7 @@
 
 Convert public **ChatGPT** and **Gemini** share links into clean, beautifully formatted **PDF** files — for free, with no login and no browser extension.
 
-**Try it: [aichattopdf.com](https://aichattopdf.netlify.com)**
+**Try it: [aichattopdf.netlify.com](https://aichattopdf.netlify.com)**
 
 ## What it does
 
@@ -20,7 +20,7 @@ The conversation must be publicly shared — private chats can't be fetched.
 ## How it works
 
 1. **Share** your conversation in ChatGPT or Gemini and copy the public link.
-2. **Paste** the link at [aichattopdf.com](https://aichattopdf.netlify.com).
+2. **Paste** the link at [aichattopdf.netlify.com](https://aichattopdf.netlify.com).
 3. **Generate** — your browser's print dialog opens with the formatted conversation. Save as PDF.
 
 ## Tech stack
